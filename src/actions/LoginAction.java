@@ -26,9 +26,6 @@ public class LoginAction extends BaseAction {
             error = true;
         } else {
             initDataContext();
-            //List<UserEntity> rst = session.createQuery("from UserEntity u where u.username=?").list();
-            //List<UserEntity> rst = (List<UserEntity>) session.createQuery("from user").list();
-
             List list = session.createQuery("from UserEntity u where u.username=? and u.password=?")
                     .setParameter(0, user.getUsername())
                     .setParameter(1, user.getPassword())
@@ -37,7 +34,6 @@ public class LoginAction extends BaseAction {
                 addActionError("用户名密码错误");
                 error = true;
             }
-
         }
         if (error)
             return ERROR;

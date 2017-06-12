@@ -39,7 +39,7 @@ public class DAOTest {
         session.close();
     }
     //查找
-    //@Test
+    @Test
     public void getById() {
         UserEntity user = (UserEntity) session.get(UserEntity.class, new Integer(8));
         tx.commit();
@@ -48,7 +48,7 @@ public class DAOTest {
                 "；密码：" + user.getPassword() );
     }
     //删除
-    //@Test
+    @Test
     public void delete() {
         UserEntity user = (UserEntity) session.get(UserEntity.class, new Integer(6));
         session.delete(user);

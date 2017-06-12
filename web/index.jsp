@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Insert title here</title>
+    <title>主页</title>
     <style type="text/css">
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -42,10 +42,10 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" width="200" align="left" style="background:#eee">Login Here</td>
+                <td colspan="2" width="200" align="left" style="background:#eee">登陆</td>
             </tr>
             <tr>
-                <td align="left">用户名:</td>
+                <td align="left">用户:</td>
                 <td align="left"><s:textfield name="user.username"/></td>
             </tr>
             <tr>
